@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajeet IT Services | Professional App Development</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #0f2027;
+            color: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            color: #203a43;
+            background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: #fff;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00adb5;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(15, 32, 39, 0.85), rgba(32, 58, 67, 0.85)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: white;
+            padding: 8rem 5% 6rem;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            color: #cbd5e1;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #00adb5;
+            color: white;
+            padding: 0.75rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #007c82;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 5%;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .services h2 {
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
+            color: #0f2027;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            padding: 2.5rem 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            border-top: 4px solid #00adb5;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            margin-bottom: 1rem;
+            color: #0f2027;
+        }
+
+        /* Organization Info Section */
+        .org-info {
+            padding: 5rem 5%;
+            background-color: #f1f5f9;
+        }
+
+        .info-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .info-box h3 {
+            font-size: 1.8rem;
+            color: #0f2027;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-box p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        .info-box strong {
+            color: #0f2027;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #203a43;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0f2027;
+            color: #94a3b8;
+            text-align: center;
+            padding: 2rem 5%;
+            font-size: 0.9rem;
+            border-top: 1px solid #1e293b;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h2 { font-size: 2.2rem; }
+            header { flex-direction: column; text-align: center; gap: 1rem; }
+            nav a { margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Ajeet IT Services</h1>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About & Verification</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>We Turn Ideas Into High-Performance Apps</h2>
+        <p>Ajeet IT Services is a trusted corporate entity delivering cutting-edge, secure, and intuitive application development solutions globally.</p>
+        <a href="#contact" class="btn">Get In Touch</a>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Core Expertise</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Custom Mobile Apps</h3>
+                <p>Tailor-made Android and iOS applications designed to offer exceptional user experiences and robust functionality.</p>
+            </div>
+            <div class="service-card">
+                <h3>Enterprise Solutions</h3>
+                <p>Scalable corporate applications integrated perfectly into your business ecosystem to drive productivity.</p>
+            </div>
+            <div class="service-card">
+                <h3>App Maintenance & Support</h3>
+                <p>Continuous monitoring, updates, and optimization to ensure your digital tools run flawlessly 24/7.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="org-info" id="about">
+        <div class="info-container">
+            <div class="info-box">
+                <h3>Corporate Identity</h3>
+                <p><strong>Ajeet IT Services</strong> is an established organization committed to transparency, technical excellence, and verified business standards.</p>
+                <p><strong>DUNS Number:</strong></p>
+                <div class="badge">77-193-6910</div>
+            </div>
+
+            <div class="info-box" id="contact">
+                <h3>Official Contact & Address</h3>
+                <p><strong>Registered Address:</strong><br>
+                   AJEET IT SERVICES<br>
+                   02, Sogarwals, Beruka, Mathura,<br>
+                   Beruka, Mathura, Uttar Pradesh - 281004<br>
+                   India
+                </p>
+                <p><strong>Email:</strong> <a href="mailto:ajeetappservices@gmail.com" style="color: #00adb5; text-decoration: none;">ajeetappservices@gmail.com</a></p>
+                <p><strong>Mobile:</strong> <a href="tel:+916395362040" style="color: #00adb5; text-decoration: none;">+91 6395362040</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Ajeet IT Services. All Rights Reserved.</p>
+        <p style="font-size: 0.8rem; color: #64748b;">DUNS: 771936910 | Headquartered in Mathura, UP, India</p>
+    </footer>
+
+</body>
+</html>
